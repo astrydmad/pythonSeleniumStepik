@@ -2,7 +2,7 @@
 from pages.main_page import MainPage
 from pages.login_page import LoginPage
 from pages.product_page import ProductPage
-from pages.cart_page import CartPage
+from pages.basket_page import CartPage
 import time
 import pytest
 
