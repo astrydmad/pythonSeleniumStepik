@@ -7,8 +7,7 @@ import time
 import pytest
 
 @pytest.mark.need_review
-def test_guest_can_add_item_to_cart(browser):
-    #this test = test_guest_can_add_product_to_basket
+def test_guest_can_add_product_to_basket(browser):
     link = "http://selenium1py.pythonanywhere.com/en-gb/catalogue/the-shellcoders-handbook_209/?promo=newYear"
     page = ProductPage(browser, link)
     page.open()
@@ -70,8 +69,7 @@ class TestUserAddToBasketFromProductPage():
         page.test_guest_cant_see_success_message()
 
     @pytest.mark.need_review
-    def test_user_can_add_item_to_cart(self, browser):
-        #this tests = test_user_can_add_product_to_basket 
+    def test_user_can_add_product_to_basket(self, browser):
         page = ProductPage(browser, self.link)
         page.open()
         page.should_be_add_to_cart_button()
